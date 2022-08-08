@@ -13,4 +13,14 @@ section {
     min-width: 40vh;
     background-color: red;
     margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    margin: 10px;
+    background-color: aqua;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
 }
