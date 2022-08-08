@@ -4,6 +4,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color:  white
 }
 
 section {
@@ -11,16 +12,68 @@ section {
     min-height: 60vh;
     width: 50vh;
     min-width: 40vh;
-    background-color: red;
+    background-color: rgb(84,80,73);
     margin: 30px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1px;
 }
 
-.calculator {
-    margin: 10px;
-    background-color: aqua;
-    width: calc(100% - 80px);
-    height: calc(100% - 80px);
+.running {
+    height: calc(100% / 3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.running span {
+    /* color: white; */
+    font-size: 4em;
+    opacity: 0.9;
+    margin-right: 10px;
+
+}
+
+.first div {
+    background-color: rgb(98,100,102);
+}
+
+.row {
+    display: flex;
+    flex: 1 1 calc(100% / 5);
+    gap: 1px;
+}
+
+.button {
+    background-color: rgb(125,125,125);
+    flex: 0 1 calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    opacity: 0.8;
+
+}
+
+.button:active {
+    opacity: 1;
+}
+
+.operation {
+    background-color: rgb(255, 159, 33);
+}
+
+.zero {
+    flex: 0 1 calc((100% / 2) + 2px);
+    border-bottom-left-radius: 10px;
+}
+
+.equal {
+    border-bottom-right-radius: 10px;
+}
+
+.fifth {
+    border-radius: 10px;
 }
