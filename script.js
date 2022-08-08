@@ -61,8 +61,8 @@ function makeCalculation(operation, numA, numB) {
         result = +numA + +numB;
             break;
     }
-    currentResult.innerText = result.toFixed(2);
-    // currentResult.innerText = result;
+    currentResult.innerText = removePrecision(result.toFixed(2));
+    console.log(removePrecision(result.toFixed(2)));
 }
 
 let clearButton = document.querySelector("#clear");
@@ -73,3 +73,9 @@ clearButton.addEventListener('click', () => {
     operation = '';
 });
 
+function removePrecision(number){
+    if (number.endsWith('.00')) {
+        return number.replace('.00','');
+    }
+    return number;
+}
