@@ -7,22 +7,6 @@ let operation = '';
 const numButtons = document.querySelectorAll('.button.num');
 numButtons.forEach(button => button.addEventListener('click', dialNumber));
 
-// function dialNumber(event) {
-//     if (currentResult.innerText === '0' && event.target.innerText == '.') {
-//         currentResult.innerText = '0.';
-//     } else if (currentResult.innerText === '0') {
-//         currentResult.innerText = event.target.innerText;
-//     } else {
-//         if (event.target.innerText === '.' 
-//             && currentResult.innerText.includes('.')) {
-//             console.log("Floating poin can have only one '.'")
-//             return;
-//         }
-//         currentResult.innerText += event.target.innerText;
-//     }
-//     console.log(event.target.innerText);
-// }
-
 function dialNumber(event) {
     if (numA === currentResult.innerText) {
         currentResult.innerText = '';
