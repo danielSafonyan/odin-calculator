@@ -1,0 +1,16 @@
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 70vh;
+    min-height: 60vh;
+    width: 50vh;
+    min-width: 40vh;
+    background-color: red;
+    margin: 30px;
+}
