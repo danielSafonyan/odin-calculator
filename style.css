@@ -54,6 +54,7 @@ section {
     align-items: center;
     font-size: 2.5em;
     opacity: 0.8;
+    user-select:none;
 
 }
 
@@ -65,13 +66,18 @@ section {
     background-color: rgb(255, 159, 33);
 }
 
+.dot {
+    
+}
+
 .zero {
-    flex: 0 1 calc((100% / 2) + 2px);
+    flex: 0 1 calc((100% / 2) + 1px);
     border-bottom-left-radius: 10px;
 }
 
 .equal {
     border-bottom-right-radius: 10px;
+    flex-basis: calc((100% / 4) - 0.5px)
 }
 
 .fifth {
